@@ -1,0 +1,59 @@
+.hero-section {
+  &__container {
+    display: flex;
+    max-width: 1744px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/hero-bg.png");
+    background-position: cover;
+    padding-top: 176px;
+    padding-bottom: 50px;
+    border-radius: 90px;
+  }
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    font-family: "Mont", sans-serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: 51px;
+    margin-bottom: 48px;
+    line-height: 1;
+  }
+  &__title strong {
+    font-size: 74px;
+  }
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 32px;
+    max-width: 447px;
+    line-height: 35px;
+    margin-bottom: 190px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    padding: 0 20px;
+  }
+
+  &__item {
+    font-family: "Mont", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    max-width: 373px;
+    color: #fff;
+  }
+  &__item::marker {
+    color: var(--brand-color-light);
+    font-size: 2rem;
+  }
+  &__item.last {
+    max-width: 456px;
+
+  }
+}
