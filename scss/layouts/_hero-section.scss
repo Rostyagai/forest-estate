@@ -9,19 +9,27 @@
     background-image: url("../images/hero-bg.png");
     background-position: cover;
     padding-top: 176px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     border-radius: 90px;
+    max-height: 751px;
+    height: 100%;
   }
-  &__title {
+  &__container .container {
+    max-height: 515px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    justify-content: space-between;
+    align-items: space-between;
+    gap: 204px;
+  }
+  &__title {
     font-family: "Mont", sans-serif;
     font-weight: 900;
     color: #fff;
     font-size: 51px;
-    margin-bottom: 48px;
-    line-height: 1;
+    margin-bottom: 17.5px;
+    line-height: 80px;
   }
   &__title strong {
     font-size: 74px;
@@ -32,28 +40,38 @@
     color: #fff;
     font-size: 32px;
     max-width: 447px;
-    line-height: 35px;
-    margin-bottom: 190px;
+    line-height: 110%;
+    // margin-bottom: 209px;
   }
   &__list {
     display: grid;
     grid-template-columns: 4fr 4fr 4fr;
-    padding: 0 20px;
   }
 
   &__item {
+    position: relative;
     font-family: "Mont", sans-serif;
     font-weight: 600;
     font-size: 24px;
-    max-width: 373px;
+    max-width: 300px;
+    width: 100%;
     color: #fff;
+    list-style: none;
+    transform: translateX(32px);
   }
-  &__item::marker {
-    color: var(--brand-color-light);
-    font-size: 2rem;
+  &__item::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: -32px;
+    top: 8px;
+    background-color: var(--brand-color-light);
   }
+
   &__item.last {
     max-width: 456px;
-
   }
 }
