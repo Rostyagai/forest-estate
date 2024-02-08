@@ -19,4 +19,9 @@
     rgb(68, 124, 42);
 
   cursor: pointer;
+  transition: opacity .3s;
+
+  &:hover{
+    opacity: 0.8;
+  }
 }
