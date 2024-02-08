@@ -1,5 +1,11 @@
 .header {
   padding: 19px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
   &__container {
     display: flex;
     max-width: 1744px;
@@ -57,12 +63,14 @@
   &__address p {
     font-family: "Mont";
     font-style: normal;
+    font-weight: 600;
     font-size: 16px;
     color: var(--text-color-light);
   }
   &__address a {
     font-family: "Mont";
     font-style: normal;
+    font-weight: 600;
     font-size: 25px;
     color: var(--text-color-dark);
     text-decoration: none;
