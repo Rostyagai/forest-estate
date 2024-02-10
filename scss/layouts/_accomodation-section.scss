@@ -1,0 +1,26 @@
+.accomodation-section {
+  padding-top: 47px;
+  padding-bottom: 5rem;
+  &__top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+  &__btn {
+    width: 336px;
+    height: 87px;
+    border-radius: 50px;
+  }
+  &__title {
+    max-width: 914px;
+  }
+  &__text {
+    font-size: 30px;
+    color: var(--text-color-brown);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}

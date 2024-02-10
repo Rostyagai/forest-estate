@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Лесная Усадьба - Пансионат для пожилых премиум-класа</title>
   </head>
   <body>
@@ -180,7 +184,181 @@
           </div>
         </div>
       </section>
+      <section class="accomodation-section">
+        <div class="container">
+          <div class="accomodation-section__top">
+            <h2 class="accomodation-section__title section-title">
+              Вы получите <strong>незабываемые впечатления в нашей резиденции</strong>
+            </h2>
+            <button class="accomodation-section__btn btn">Записаться на экскурсию</button>
+          </div>
+          <div class="carousel">
+            <!-- <button class="carousel__button-prev swiper-button-prev" type="button">sds</button>
+            <button class="carousel__button-next swiper-button-next" type="button">dsds</button> -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="carousel__wrapper swiper-wrapper">
+                <!-- Slides -->
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/1.png" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/2.jpeg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/3.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/4.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/5.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/6.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/7.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/8.jpeg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/9.jpeg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/10.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/11.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/12.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/13.jpeg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/14.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/15.jpg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/16.jpeg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/17.jpeg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/18.jpeg" alt="Фото условий" />
+                  </div>
+                </div>
+                <div class="carousel__slide swiper-slide">
+                  <div class="carousel__image">
+                    <img src="./images/carousel/19.jpeg" alt="Фото условий" />
+                  </div>
+                </div>
+              </div>
+              <div class="carousel__btn prev">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2504_4)">
+                    <path
+                      d="M6.76381 10.177L16.2272 0.693881C16.5835 0.33691 17.1616 0.336362 17.5185 0.692557C17.8755 1.04875 17.8761 1.62687 17.5199 1.98384L8.05578 11.4677C7.69977 11.8237 7.69977 12.4029 8.05646 12.7596L17.5199 22.2428C17.8761 22.5997 17.8755 23.1778 17.5185 23.534C17.3403 23.7119 17.1069 23.8008 16.8735 23.8008C16.6396 23.8008 16.4056 23.7114 16.2272 23.5327L6.76449 14.0502C5.69646 12.9822 5.69646 11.2444 6.76381 10.177Z"
+                      fill="none"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2504_4">
+                      <rect
+                        width="23.375"
+                        height="23.375"
+                        fill="none"
+                        transform="matrix(-1 0 0 1 23.5625 0.425781)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="carousel__btn next">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2504_4)">
+                    <path
+                      d="M6.76381 10.177L16.2272 0.693881C16.5835 0.33691 17.1616 0.336362 17.5185 0.692557C17.8755 1.04875 17.8761 1.62687 17.5199 1.98384L8.05578 11.4677C7.69977 11.8237 7.69977 12.4029 8.05646 12.7596L17.5199 22.2428C17.8761 22.5997 17.8755 23.1778 17.5185 23.534C17.3403 23.7119 17.1069 23.8008 16.8735 23.8008C16.6396 23.8008 16.4056 23.7114 16.2272 23.5327L6.76449 14.0502C5.69646 12.9822 5.69646 11.2444 6.76381 10.177Z"
+                      fill="none"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2504_4">
+                      <rect
+                        width="23.375"
+                        height="23.375"
+                        fill="none"
+                        transform="matrix(-1 0 0 1 23.5625 0.425781)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <p class="accomodation-section__text">Уютные комнаты отдыха</p>
+          <div class="carousel__pagination swiper-pagination"></div>
+
+          <img src="./images/Video.png" alt="" />
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/carousel.js"></script>
   </body>
 </html>
